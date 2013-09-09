@@ -9,4 +9,4 @@ This is by no means a complete template for T-SQL just some hack job to get some
 Installation Instructions (Win)
 ===============================
 
-Copy the MSSQL Folder into your sublime packages directory (%username%\AppData\Roaming\Sublime Text 2\Packages
+Copy the MSSQL Folder into your sublime packages directory (%AppData%\Sublime Text 2\Packages
