@@ -84,19 +84,19 @@
                 <key>name</key>
                 <string>keyword.control.logic.sql</string>
                 <key>match</key>
-                <string>(?i)\b(IF)\b</string>
+                <string>(?i)\b(IF|ELSE)\b</string>
             </dict>
             <dict>
                 <key>name</key>
                 <string>constant.language.sql</string>
                 <key>match</key>
-                <string>(?i)\b(NULL|NOT NULL|ASC|DESC)\b</string>
+                <string>(?i)\b(NULL|NOT NULL|ASC|DESC|COUNT)\b</string>
             </dict>
             <dict>
                 <key>name</key>
                 <string>keyword.control.operator.sql</string>
                 <key>match</key>
-                <string>(?i)\b(AND|OR|NOT|IS|IN|EXISTS|GOTO)\b</string>
+                <string>(?i)\b(AND|OR|NOT|IS|IN|EXISTS|GOTO|HAVING)\b</string>
             </dict>
             <dict>
                 <key>name</key>
@@ -108,7 +108,7 @@
                 <key>name</key>
                 <string>keyword.data.sql</string>
                 <key>match</key>
-                <string>(?i)\b(INSERT|INTO|DELETE|SELECT|FROM|WHERE|ORDER BY|UNION|VALUES|REFERENCES|PRIMARY KEY|IDENTITY|DEFAULT|INNER|JOIN|DECLARE|SET|TABLE|OUTPUT|UPDATE|DISTINCT|ON|PRINT|CREATE VIEW|FOR XML PATH)\b</string>
+                <string>(?i)\b(INSERT|INTO|DELETE|SELECT|FROM|WHERE|ORDER BY|GROUP BY|UNION|VALUES|REFERENCES|PRIMARY KEY|IDENTITY|DEFAULT|INNER|JOIN|DECLARE|SET|TABLE|OUTPUT|UPDATE|DISTINCT|ON|PRINT|CREATE VIEW|FOR XML PATH)\b</string>
             </dict>
             <dict>
                 <key>name</key>
@@ -149,7 +149,7 @@
                 <key>name</key>
                 <string>meta.create-procedure.sql</string>
                 <key>match</key>
-                <string>(?i)(CREATE)\s+(PROCEDURE)\s+((?:(dbo)(\.))?\S+)</string>
+                <string>(?i)(CREATE|DROP)\s+(PROCEDURE)\s+((?:(dbo)(\.))?\S+)</string>
             </dict>
             <dict>
                 <key>captures</key>
@@ -183,7 +183,7 @@
                 <key>name</key>
                 <string>meta.create-table.sql</string>
                 <key>match</key>
-                <string>(?i)(CREATE)\s+(TABLE)\s+((?:(dbo)(\.))?\S+)</string>
+                <string>(?i)(CREATE|DROP)\s+(TABLE)\s+((?:(dbo)(\.))?\S+)</string>
             </dict>
             <dict>
                 <key>name</key>
